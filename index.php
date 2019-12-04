@@ -1,5 +1,5 @@
-<!-- Déclaration d'une variable age -->
 <?php
+// Déclaration d'une variable age
 $age=12;
 ?>
 <!DOCTYPE html>
@@ -9,17 +9,12 @@ $age=12;
   <title>PHP2Ex4</title>
 </head>
 <body>
-  <?php
-  // Si tu as 18 ans ou plus tu es majeur
-  if($age>=18)
-  {
-    echo'Tu es majeur';
-  }
-  // Sinon si tu as en dessous de 18 ans alors tu es mineur
-  else
-  {
-    echo'Tu n\'es pas majeur';
-  }
-  ?>
+  <!-- Si tu as 18 ans ou plus tu es majeur -->
+  <?php if($age>=18)?>{
+    <p>Tu es majeur</p>
+    <!-- Sinon tu es mineur -->
+  <?php }else{?>
+    <p>Tu n\'es pas majeur</p>
+  <?php } ?>
 </body>
 </html>
